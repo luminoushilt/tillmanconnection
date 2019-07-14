@@ -1,0 +1,24 @@
+{
+  "code" : {
+	"sass"      : "prototype/assets/css/**/main.sass",
+	"sassDir"   : [
+				"prototype/assets/css/**/*.sass",
+				"prototype/assets/css/**/*.scss"
+				],
+	"pug"       : "prototype/**/*.pug",
+	"js"        : "prototype/assets/js/*.js",
+	"img"       : "prototype/assets/img/*",
+	"root"      : "prototype/"
+  },
+  "output" : {
+	  "cssIn"   : "public/assets/css/*.css",
+	  "cssOut"  : "public/assets/css/",
+	  "js"      : "public/assets/js/",
+	  "img"     : "public/assets/img",
+	  "php"     : "public/**/*.php",
+	  "root"    : "public/"
+  },
+  "config": {
+	"devUrl": "http://kyuubi.local"
+  }
+}

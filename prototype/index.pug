@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title Luminous Hilt | Home
+		meta(name='description', content='')
+		meta(name='author', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='/assets/css/main.css')
+		link(rel='icon', type='image/png', href='/assets/img/favicon.ico')
+	body.home
+		include assets/inc/banner.pug
+
+		section.hero.is-light.hero-img.background-is-fixed
+
+		section.section
+			.container.is-flex.is-flex-row
+				.logo
+					img(src='/assets/img/luminous_logo.svg', alt='Company Logo')
+				h1.is-luminous-header.title.is-header-1.is-size-3-mobile.is-inline-block.is-aligned Welcome
+
+		section.section
+			.container
+				h3.paths.mar-b-20 paths:
+				.columns.is-multiline.is-centered
+					.column.is-half.is-quad
+					.column.is-half.is-quad
+					.column.is-half.is-quad
+					.column.is-half.is-quad
+
+		include assets/inc/footer.pug
+
+		script(src='/assets/js/scripts.js')

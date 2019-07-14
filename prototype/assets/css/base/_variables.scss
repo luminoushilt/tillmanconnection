@@ -1,0 +1,86 @@
+// Typography
+$base-font-family: $font-stack-source;
+$heading-font-family: $font-stack-raleway;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: 1.5em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$jet-black: 	#000;
+$dark-gray: 	#333;
+$light-blue: 	#33c3f0 !default;
+$light-gray: 	#ddd;
+$medium-gray: 	#999;
+$lh-orange:		#f6921e;
+$pink: 			#f6c;
+$royal-purple:  #4e3862;
+$red: 			#d61212;
+$white: 		#fff;
+
+// Cool
+$aqua:  		#7FDBFF;
+$blue:  		#0074D9;
+$navy:  		#001F3F;
+$teal:  		#39CCCC;
+$green: 		#2ECC40;
+$olive: 		#3D9970;
+$lime:  		#01FF70;
+
+
+// Warm
+$yellow:  		#FFDC00;
+$orange:  		#FF851B;
+$tomato-red:	#FF4136;
+$fuchsia: 		#F012BE;
+$purple:  		#B10DC9;
+$maroon:  		#85144B;
+
+
+// Gray Scale
+$silver: 		#ddd;
+$gray:   		#aaa;
+$black:  		#111;
+
+$text-color: 	#6a6a6a;
+$primary-color:   $light-blue;
+
+// Font Colors
+$base-font-color: $text-color;
+$action-color: 	  $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$viewport-background-color: $white;
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 550px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Misc
+$global-radius: 4px !default;
+$full-viewport-width: 99vw;
+$full-viewport-height: 100vh;
+$full-width: 100%;

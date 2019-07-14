@@ -1,0 +1,5 @@
+mixin navlinks
+
+    #navMenu.navbar-menu.has-text-centered.navi.navbar-end.is-mobile-luminous
+        each val, link in {'/' : 'Home' , '/About' : 'About' , '/Projects' : 'Projects' , '/Qualifications' : 'Qualifications' , '#Contact' : 'Contact Us'}
+            a.navbar-item.has-lh-hover(href=link)= val

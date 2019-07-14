@@ -1,0 +1,45 @@
+$i: 200; // Set up the initial value used in the loop
+@while $i >= 0 {
+
+    // Margin top
+    .mar-t-#{$i} {
+        margin-top: (1px * $i);
+    }
+
+    // Margin right
+    .mar-r-#{$i} {
+        margin-right: (1px * $i);
+    }
+
+    // Margin bottom
+    .mar-b-#{$i} {
+        margin-bottom: (1px * $i);
+    }
+
+    // Margin left
+    .mar-l-#{$i} {
+        margin-left: (1px * $i);
+    }
+
+    // Padding top
+    .pad-t-#{$i} {
+        padding-top: (1px * $i);
+    }
+
+    // Padding right
+    .pad-r-#{$i} {
+        padding-right: (1px * $i);
+    }
+
+    // Padding bottom
+    .pad-b-#{$i} {
+        padding-bottom: (1px * $i);
+    }
+
+    // Padding left
+    .pad-l-#{$i} {
+        padding-left: (1px * $i);
+    }
+
+    $i: $i - 5; // After each loop deminish initial value by x
+}
