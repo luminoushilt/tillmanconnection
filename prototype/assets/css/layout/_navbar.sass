@@ -66,12 +66,13 @@
 	&-icon,
 	&-icon::before,
 	&-icon::after
-		display: block
 		background-color: $white
-		height: 2px
-		width: 2em
 		border-radius: 2px
+		display: block
+		height: 2px
 		position: relative
+		transition: all $navbar-timing $base-duration
+		width: 2em
 
 	&-icon::before,
 	&-icon::after
@@ -83,6 +84,15 @@
 
 	&-icon::after
 		top: 7px
+
+.navbar-toggle:checked ~ .navbar-toggle-label
+	transform: rotate(45deg)
+
+.navbar-toggle:checked ~ .navbar-toggle-label .navbar-toggle-label-icon::before
+	opacity: 0
+
+.navbar-toggle:checked ~ .navbar-toggle-label .navbar-toggle-label-icon::after
+	transform: translateY(-7px) rotate(-90deg)
 
 @media screen and (min-width: $desktop)
 	.navbar-toggle-label
