@@ -1,0 +1,85 @@
+/* ========================
+		Navigation
+	======================= */
+
+.navbar-brand
+	align-items: center
+	background-color: $teal-two
+	display: flex
+	flex-direction: column
+	justify-content: center
+	position: fixed
+	text-align: center
+	width: 100%
+	z-index: 9999
+
+.brand-logo
+	margin: 1rem
+
+.navbar
+	transform: scale(1, 0)
+	transform-origin: top
+	transition: transform 400ms $navbar-timing
+
+.navbar-menu
+	align-items: center
+	background-color: $teal-two
+	// border: 1px solid $red
+	display: flex
+	flex-direction: column
+	left: -50vw
+	position: absolute
+	top: 100%
+	width: 100vw
+
+.navbar-item
+	color: $white
+	font-size: 1.2rem
+	margin-bottom: 1em
+	opacity: 0
+	text-decoration: none
+	text-transform: uppercase
+	transition: opacity $base-duration $navbar-timing
+
+	&:hover
+		color: $jet-black
+
+.navbar-toggle
+	display: none
+
+.navbar-toggle:checked ~ .navbar
+	transform: scale(1,1)
+
+.navbar-toggle:checked ~ .navbar .navbar-item
+	opacity: 1
+	transition: opacity $navbar-duration $navbar-timing $navbar-delay
+
+.navbar-toggle-label
+	align-items: center
+	display: flex
+	height: 100%
+	left: 0
+	margin-left: 1em
+	position: absolute
+	top: 0
+
+	&-icon,
+	&-icon::before,
+	&-icon::after
+		display: block
+		background-color: $white
+		height: 2px
+		width: 2em
+		border-radius: 2px
+		position: relative
+
+	&-icon::before,
+	&-icon::after
+		content: ''
+		position: absolute
+
+	&-icon::before
+		bottom: 7px
+
+	&-icon::after
+		top: 7px

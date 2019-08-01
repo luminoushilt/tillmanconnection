@@ -28,10 +28,12 @@ $white: 		#fff;
 $aqua:  		#7FDBFF;
 $blue:  		#0074D9;
 $navy:  		#001F3F;
-$teal:  		#39CCCC;
+$teal-one: 		#39CCCC;
+$teal-two:		#028482;
 $green: 		#2ECC40;
 $olive: 		#3D9970;
 $lime:  		#01FF70;
+$tillman:		rgba(0, 214, 170, .85);
 
 
 // Warm
@@ -71,13 +73,12 @@ $focus-outline-offset: 2px;
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+$navbar-duration: 250ms;
+$navbar-timing: ease-in-out;
+$navbar-delay: $navbar-duration;
 
 // Breakpoints
-$bp-larger-than-mobile    : "min-width: 400px" !default;
-$bp-larger-than-phablet   : "min-width: 550px" !default;
-$bp-larger-than-tablet    : "min-width: 750px" !default;
-$bp-larger-than-desktop   : "min-width: 1000px" !default;
-$bp-larger-than-desktophd : "min-width: 1200px" !default;
+$touch: 959px;
 
 // Misc
 $global-radius: 4px !default;
