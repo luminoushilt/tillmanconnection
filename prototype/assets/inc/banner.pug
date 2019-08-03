@@ -1,14 +1,11 @@
 include mixins.pug
 
-nav.navbar.is-lh-grey(role='navigation', aria-label='main navigation')
-    .navbar-brand.has-no-hover
-        a.navbar-item.brand-logo(href='./')
-            img(src='../assets/img/luminous_logo_nav.svg', alt='Company Logo', width='40', height='40')
-            <span class="navbar-company-name">Luminous Hilt</span>
-
-        button.button.is-luminous.is-flush-button.navbar-burger.is-radiusless(data-target='navMenu')
-            span
-            span
-            span
-
-    +navlinks
+header.navbar-brand
+	a.brand-logo(href='./')
+		img(src='../assets/img/luminous_logo_nav.svg', alt='Company Logo', width='40', height='40')
+		<span class="navbar-company-name">Tillman Connection</span>
+	input#navbar-toggle.navbar-toggle(type='checkbox', name='navbar-toggle')
+	label.navbar-toggle-label(for='navbar-toggle')
+		span.navbar-toggle-label-icon
+	nav.navbar(role='navigation')
+		+navlinks

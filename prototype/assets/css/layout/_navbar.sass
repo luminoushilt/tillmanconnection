@@ -1,0 +1,151 @@
+/* ========================
+		Navigation
+	======================= */
+
+.navbar-brand
+	align-items: center
+	background-color: $teal-two
+	display: flex
+	flex-direction: column
+	justify-content: center
+	position: fixed
+	text-align: center
+	width: 100%
+	z-index: 9999
+
+.brand-logo
+	margin: 1rem
+	text-decoration: none
+
+.navbar-company-name
+	color: $white
+	display: block
+	font-size: 1rem
+	font-weight: 700
+
+.navbar
+	transform: scale(1, 0)
+	transform-origin: top
+	transition: transform 400ms $navbar-timing
+
+.navbar-menu
+	align-items: center
+	background-color: $teal-two
+	display: flex
+	flex-direction: column
+	left: -50vw
+	position: absolute
+	top: 100%
+	width: 100vw
+
+.navbar-item
+	color: $white
+	font-size: 1.2rem
+	margin-bottom: 1em
+	opacity: 0
+	text-decoration: none
+	text-transform: uppercase
+	transition: opacity $base-duration $navbar-timing
+
+	&:hover
+		color: $dark-gray
+
+.navbar-toggle
+	display: none
+
+.navbar-toggle:checked ~ .navbar
+	transform: scale(1,1)
+
+.navbar-toggle:checked ~ .navbar .navbar-item
+	opacity: 1
+	transition: opacity $navbar-duration $navbar-timing $navbar-delay
+
+.navbar-toggle-label
+	align-items: center
+	cursor: pointer
+	display: flex
+	height: 100%
+	left: 0
+	margin-left: 1em
+	position: absolute
+	top: 0
+
+	&-icon,
+	&-icon::before,
+	&-icon::after
+		background-color: $white
+		border-radius: 2px
+		display: block
+		height: 2px
+		position: relative
+		transition: all $navbar-timing $base-duration
+		width: 2em
+
+	&-icon::before,
+	&-icon::after
+		content: ''
+		position: absolute
+
+	&-icon::before
+		bottom: 7px
+
+	&-icon::after
+		top: 7px
+
+.navbar-toggle:checked ~ .navbar-toggle-label
+	transform: rotate(45deg)
+
+.navbar-toggle:checked ~ .navbar-toggle-label .navbar-toggle-label-icon::before
+	opacity: 0
+
+.navbar-toggle:checked ~ .navbar-toggle-label .navbar-toggle-label-icon::after
+	transform: translateY(-7px) rotate(-90deg)
+
+@media screen and (min-width: $desktop)
+	.navbar-toggle-label
+		display: none
+
+	.navbar-brand
+		display: grid
+		grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr
+
+	.brand-logo
+		grid-column: 2/3
+
+	.navbar-company-name
+		display: inline-block
+		margin-left: 20px
+		font-size: 2rem
+
+	.navbar, .navbar-menu
+		all: unset
+
+	.navbar
+		align-items: center
+		display: flex
+		grid-column: 3/4
+		justify-content: flex-end
+
+	.navbar-menu
+		display: flex
+
+	.navbar-item
+		margin: 0 0 0 3em
+		opacity: 1
+		position: relative
+
+		&::before
+			background-color: $dark-gray
+			content: ''
+			display: block
+			height: 5px
+			left: 0
+			position: absolute
+			right: 0
+			top: -.75em
+			transform: scale(0,1)
+			transition: transform $navbar-timing $navbar-duration
+
+		&:hover::before,
+		&:focus::before
+			transform: scale(1,1)

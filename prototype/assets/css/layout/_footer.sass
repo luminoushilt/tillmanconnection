@@ -1,0 +1,87 @@
+/* ========================
+		Footer
+	======================= */
+
+.footer
+	background-color: $dark-gray
+	border-top: 1px solid darken($dark-gray, 20%)
+	color: $white
+	display: table-row
+	height: 1px
+	padding: 1em 0
+
+	.navbar-menu
+		all: unset
+		align-items: center
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding: 40px 0 0
+
+	.navbar-item
+		font-size: 1rem
+		margin-bottom: 0
+		opacity: 1
+
+		&:hover
+			color: $teal-two
+
+		&::after
+			background: $white
+			content: ''
+			display: block
+			height: 1px
+			margin: 20px auto
+			width: 30px
+
+	.section
+		border: none
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding: 0 0 40px
+		text-align: center
+
+@media screen and (min-width: $desktop)
+	.footer
+		flex-direction: row
+
+		.container
+			display: grid
+			grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr
+
+			.section
+				grid-column: 2/3
+				grid-row: 1/2
+				padding-top: 40px
+
+				p
+					padding-top: 20px
+
+			.navbar-menu
+				flex-direction: row
+				grid-column: 3/4
+				justify-content: flex-end
+				padding: 0
+
+				.navbar-item
+					position: relative
+
+					&::after
+						background-color: $teal-two
+						height: 5px
+						left: 0
+						position: absolute
+						right: 0
+						top: .75em
+						transform: scale(0,1)
+						transition: transform $navbar-timing $navbar-duration
+						width: auto
+
+					&:hover::after,
+					&:focus::after
+						transform: scale(1,1)
+
+					&::before
+						background: none
+						top: initial
