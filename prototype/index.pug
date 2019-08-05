@@ -13,22 +13,27 @@ html(lang='en')
 		include assets/inc/banner.pug
 
 		section.section
-			.hero-img
+			.section-hero
+				a(href='#greeting').button.button-default Get Connected
 
-		section.section
-			.container.is-flex.is-flex-row
-				.logo
-					img(src='/assets/img/luminous_logo.svg', alt='Company Logo')
-				h1.is-luminous-header.title.is-header-1.is-size-3-mobile.is-inline-block.is-aligned Welcome
+		section#greeting.section.section-content
+			h1.title Greetings Family &amp; Friends!
+			p.
+				It is with much anticipation your Tillman Connection family reunion. &nbsp;Committee members are very excited to officially announce the 2021 Tillman Connection Family Reunion in our nation's capital of Washington, D.C.
 
-		section.section
-			.container
-				h3.paths.mar-b-20 paths:
-				.columns.is-multiline.is-centered
-					.column.is-half.is-quad
-					.column.is-half.is-quad
-					.column.is-half.is-quad
-					.column.is-half.is-quad
+			img.img-responsive(src='//picsum.photos/450/300/?blur' alt='')
+
+		section.section.section-content
+			p.
+				Our guiding theme is "Linking generations one reunion at a time." As a committee, we are charging family to not only clinch to this theme for the reunion but to honor and practice preserving the Tillman legacy.
+
+		section.section.no-margin.section-break-image
+			.section-content
+				p How will our theme be demonstrated throughout our weekend in the nation's capital and beyond?
+
+		section.section.section-content
+			p.
+				The 2021 committee has not only committed to planning a funfilled &amp; memorable weekend, but has also committed to bridging the generations within our family together. This theme will be experienced through multiple activities and events. As you continue to explore our family website, you will see a preliminary outline of the weekend itinerary. Please pay close attention deadlines/important dates. We encourage you to visit our family website often for updates and messages. No exceptions to deadlines! For a successful outcome, we need your unwavering support, continuous participation and honoring of this family legacy.
 
 		include assets/inc/footer.pug
 

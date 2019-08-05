@@ -1,0 +1,23 @@
+// Utilities
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+// --------------------------------------------------------------------
+// * In Internet Explorer 8-10, SVG images with .img-responsive are disproportionately sized.
+// * To fix this, add "width: 100% \9;" where necessary.
+// --------------------------------------------------------------------
+
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100% \9;
+}
