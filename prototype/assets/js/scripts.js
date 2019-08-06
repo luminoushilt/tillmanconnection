@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   backToTopButton.addEventListener('click', backToTop);
 
-  function backToTop(action) { // Scroll Back to the top of the document
+  function backToTop(event) { // Scroll Back to the top of the document
    window.scrollTo(0, 0);
-   action.preventDefault();
+   event.preventDefault();
   }
 
  });
