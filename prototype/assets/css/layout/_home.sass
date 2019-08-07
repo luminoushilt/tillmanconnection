@@ -6,13 +6,13 @@
 	font-size: 2rem
 	font-weight: 300
 
-	&:nth-of-type(2)
+	&:nth-of-type(2n)
 		background-color: $silver
 		border: 1px solid darken($silver, 20%)
 		color: $text-color
 		margin: 0 !important
 
-	&:nth-of-type(3)
+	&:nth-of-type(3n)
 		background-color: $teal-two
 		border: 1px solid darken($teal-two, 20%)
 		color: $white
@@ -55,6 +55,9 @@
 			img
 				border-radius: 8px
 
+		a
+			color: $white
+
 	.section-break-image
 		align-items: center
 		background-attachment: fixed
@@ -70,7 +73,7 @@
 		height: 600px
 		max-width: 100vw
 		text-shadow: 2px 2px $black
-		padding: 0
+		padding: 0 1em
 		width: 100%
 
 @media screen and (min-width: $desktop)
@@ -82,7 +85,7 @@
 
 		.section-content
 			display: grid
-			grid-template-columns: 1fr auto minmax(20px, 1fr) auto
+			grid-template-columns: 1fr minmax(350px, 3fr) auto 1fr
 
 			h1, p
 				grid-column: 2/3
@@ -94,8 +97,10 @@
 				grid-row: 2/3
 
 			img
-				grid-column: 4/5
+				grid-column: 3/4
 				grid-row: 1/3
+				margin-left: .5em
 
 		.section-break-image
 			font-size: 3.5rem
+			padding: 0 13% 0 17%
