@@ -20,8 +20,10 @@
 .navbar-company-name
 	color: $white
 	display: block
+	font-family: $heading-font-family
 	font-size: 1rem
 	font-weight: 700
+	text-transform: uppercase
 
 .navbar
 	transform: scale(1, 0)
@@ -93,7 +95,7 @@
 		top: 7px
 
 .navbar-toggle:checked ~ .navbar-toggle-label
-	transform: rotate(45deg)
+	transform: scale(.75) rotate(45deg)
 
 .navbar-toggle:checked ~ .navbar-toggle-label .navbar-toggle-label-icon::before
 	opacity: 0
@@ -115,7 +117,7 @@
 	.navbar-company-name
 		display: inline-block
 		margin-left: 20px
-		font-size: 2rem
+		font-size: 1.5rem
 
 	.navbar, .navbar-menu
 		all: unset
