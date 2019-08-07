@@ -1,0 +1,33 @@
+/* ========================
+		Back to Top
+	======================= */
+
+.back-to-top
+	background: $teal-two
+	border: 1px solid darken($teal-two, 20%)
+	border-radius: 4px 4px 0px 0px
+	box-shadow: 12px 12px 15px $black
+	cursor: pointer
+	display: none
+	opacity: 0.25
+	+position(fixed, null 10px 0px null)
+	+size(40px)
+	text-align: center
+	z-index: 999
+
+	&:hover,
+	&:focus
+		opacity: 1
+
+	.sp-arrow-up
+		color: $white
+		font-size: 25px
+		transform: translateY(6px)
+
+@media screen and (min-width: $desktop)
+	.back-to-top
+		+size(60px)
+
+		.sp-arrow-up
+			font-size: 40px
+			transform: translateY(8px)

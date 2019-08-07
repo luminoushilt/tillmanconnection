@@ -1,4 +1,106 @@
+/* ========================
+		Home / Layout
+	======================= */
+
+.section
+	font-size: 2rem
+	font-weight: 300
+
+	&:nth-of-type(2n)
+		background-color: $silver
+		border: 1px solid darken($silver, 20%)
+		color: $text-color
+		margin: 0 !important
+
+	&:nth-of-type(3n)
+		background-color: $teal-two
+		border: 1px solid darken($teal-two, 20%)
+		color: $white
+		margin: 0 !important
+
+	&-content
+		margin: 0 auto
+		padding: 3em 1em
+
 .home
 
+	.no-margin
+		margin: 0 !important
+
 	.section
-		border: 1px solid $aqua
+		margin: 2rem 0 0
+
+		&-hero
+			align-items: center
+			background-attachment: fixed
+			background-image: url(../img/tillman_connection_banner_one.jpg)
+			background-position: bottom
+			background-repeat: no-repeat
+			background-size: cover
+			display: flex
+			flex-direction: column
+			justify-content: center
+			height: 85vh
+			margin: 3.5rem 0 0
+			max-width: 100vw
+			padding: 0
+			width: 100%
+
+		&-content
+			display: flex
+			flex-direction: column
+			max-width: 100vw
+			width: 100%
+
+			img
+				border-radius: 8px
+
+		a
+			color: $white
+
+	.section-break-image
+		align-items: center
+		background-attachment: fixed
+		background-image: url(https://picsum.photos/3000/600)
+		background-position: bottom
+		background-repeat: no-repeat
+		background-size: cover
+		color: $white
+		display: flex
+		flex-direction: column
+		font-size: 2.5rem
+		justify-content: center
+		height: 600px
+		max-width: 100vw
+		text-shadow: 2px 2px $black
+		padding: 0 1em
+		width: 100%
+
+@media screen and (min-width: $desktop)
+
+	.home
+
+		.section-hero
+			margin: 4.25rem 0 0
+
+		.section-content
+			display: grid
+			grid-template-columns: 1fr minmax(350px, 3fr) auto 1fr
+
+			h1, p
+				grid-column: 2/3
+
+			h1
+				grid-row: 1/2
+
+			p
+				grid-row: 2/3
+
+			img
+				grid-column: 3/4
+				grid-row: 1/3
+				margin-left: .5em
+
+		.section-break-image
+			font-size: 3.5rem
+			padding: 0 13% 0 17%
