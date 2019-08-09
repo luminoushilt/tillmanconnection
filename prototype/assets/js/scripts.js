@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
 
   const backToTopButton = document.querySelector('.back-to-top');
 
@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function backToTop(event) { // Scroll Back to the top of the document
    window.scrollTo(0, 0);
    event.preventDefault();
+  }
+
+  // smooth scrolling
+  function smoothScroll(event) {
+
   }
 
  });

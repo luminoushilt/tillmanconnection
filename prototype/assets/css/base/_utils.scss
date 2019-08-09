@@ -21,3 +21,19 @@
   max-width: 100%;
   width: 100% \9;
 }
+
+//font mixins
+
+@mixin fontBuilder($family, $size, $lineHeight: normal, $letterSpacing: initial, $style: normal) {
+  font-family: $family, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+  font-style: $style;
+}
+
+// Position Assistance
+@mixin borderHelper($color: #f00) {
+    background-color: #FFB6C1;
+    border: 1px dashed $color;
+}
