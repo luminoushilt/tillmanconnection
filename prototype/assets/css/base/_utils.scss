@@ -10,6 +10,18 @@
   box-sizing: border-box;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
 // --------------------------------------------------------------------
 // * In Internet Explorer 8-10, SVG images with .img-responsive are disproportionately sized.
 // * To fix this, add "width: 100% \9;" where necessary.
