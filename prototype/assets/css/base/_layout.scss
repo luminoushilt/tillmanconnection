@@ -27,3 +27,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
+
+// Selection colors (easy to forget)
+::selection{
+  background: $selection-color;
+  color: $white;
+}
