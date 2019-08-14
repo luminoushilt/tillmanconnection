@@ -25,7 +25,7 @@
 		opacity: 1
 
 		&:hover
-			color: $tillman
+			color: $teal-two
 
 		&::after
 			background: $text-color
@@ -51,18 +51,18 @@
 	.footer
 		display: block  // IE friendly
 		height: auto
-		width: 100vw // IE friendly
+		width: 100vw
 
 		.container
-			display: flex // IE friendly
-			flex-direction: row // IE friendly
-			justify-content: space-between // IE friendly
+			display: flex
+			flex-direction: row
+			justify-content: space-around
 			display: grid
 			grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr
 
 			.section
-				order: -1 // IE friendly
-				grid-column: 1/2
+				order: -1
+				grid-column: 2/3
 				grid-row: 1/2
 				padding-top: 40px
 
@@ -70,25 +70,24 @@
 					padding-top: 20px
 
 			.navbar-menu
-				align-self: center // IE friendly
+				align-self: center
 				background-color: $dark-gray
-				display: flex // IE friendly
-				flex-direction: row // IE friendly
-				justify-content: center // IE friendly
-				order: 1 // IE friendly
-				position: static // IE friendly
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				order: 1
+				position: static
 				width: auto
-				grid-column: 4/5
+				grid-column: 3/4
 				padding: 0
-				margin-right: 2rem
 
 				.navbar-item
-					align-self: center // IE friendly
+					align-self: center
 					margin-left: 3rem
 					position: relative
 
 					&::after
-						background-color: $tillman
+						background-color: $teal-two
 						height: 5px
 						left: 0
 						position: absolute
