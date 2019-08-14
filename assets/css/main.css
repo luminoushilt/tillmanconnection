@@ -1819,7 +1819,7 @@ hr {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #39CCCC;
+  background-color: rgba(0, 214, 170, 0.85);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1874,7 +1874,7 @@ hr {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #39CCCC;
+  background-color: rgba(0, 214, 170, 0.85);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2111,14 +2111,14 @@ hr {
 }
 
 .button-default {
-  background-color: #39CCCC;
-  border-color: #2ba7a7;
+  background-color: rgba(0, 214, 170, 0.85);
+  border-color: rgba(0, 163, 129, 0.85);
   color: #fff;
 }
 
 .button-default:hover, .button-default:focus {
   background-color: #fff;
-  color: #39CCCC;
+  color: rgba(0, 214, 170, 0.85);
   -webkit-transition: all ease-in-out 250ms;
   -o-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms;
@@ -2140,8 +2140,8 @@ hr {
 }
 
 .section:nth-of-type(3n) {
-  background-color: #39CCCC;
-  border: 1px solid #217e7e;
+  background-color: rgba(0, 214, 170, 0.85);
+  border: 1px solid rgba(0, 112, 89, 0.85);
   color: #fff;
   margin: 0 !important;
 }
@@ -2315,7 +2315,7 @@ hr {
 }
 
 .footer .navbar-item:hover {
-  color: #39CCCC;
+  color: rgba(0, 214, 170, 0.85);
 }
 
 .footer .navbar-item::after {
@@ -2417,7 +2417,7 @@ hr {
     position: relative;
   }
   .footer .container .navbar-menu .navbar-item::after {
-    background-color: #39CCCC;
+    background-color: rgba(0, 214, 170, 0.85);
     height: 5px;
     left: 0;
     position: absolute;
@@ -2448,8 +2448,8 @@ hr {
 		Back to Top
 	@mixin ====================== */
 .back-to-top {
-  background: #39CCCC;
-  border: 1px solid #217e7e;
+  background: rgba(0, 214, 170, 0.85);
+  border: 1px solid rgba(0, 112, 89, 0.85);
   border-radius: 4px 4px 0px 0px;
   -webkit-box-shadow: 12px 12px 15px #111;
           box-shadow: 12px 12px 15px #111;
