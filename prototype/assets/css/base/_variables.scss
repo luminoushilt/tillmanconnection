@@ -29,12 +29,13 @@ $white: 			#fff;
 $aqua:  			#7FDBFF;
 $blue:  			#0074D9;
 $navy:  			#001F3F;
-$teal-one: 			#39CCCC;
-$teal-two:			#028482;
 $green: 			#2ECC40;
 $olive: 			#3D9970;
 $lime:  			#01FF70;
-$tillman:			rgba(0, 214, 170, .85);
+$teal-one: 			#39CCCC;
+$teal-two:			#028482;
+$teal-three:		rgba(0, 214, 170, .85);
+$tillman:			$teal-two;
 
 
 // Warm
