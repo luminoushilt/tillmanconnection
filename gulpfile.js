@@ -10,7 +10,6 @@ var gulp 			= require('gulp'),
 	image 			= require('gulp-imagemin'),
 	cleanCSS		= require('gulp-clean-css'),
 	uglify 			= require('gulp-uglify'),
-	pump			= require('pump'),
 	config 			= require('./config.json'), // external config file
 	browserSync 	= require('browser-sync').create();
 
@@ -99,13 +98,12 @@ gulp.task('js', function() {
 // --------------------------------------------------------------------
 
 gulp.task('compress-js', function() {
-	pump([
-        gulp.src(code.js),
-        uglify(),
-        gulp.dest(output.js)
-	    ],
-	    cb
-	);
+	return gulp.src(code.js)
+		.pipe(plumber({
+			errorHandler: onError
+		}))
+        .pipe(uglify())
+        .pipe(gulp.dest(output.js));
 });
 
 // --------------------------------------------------------------------
