@@ -1,6 +1,7 @@
 html {
   background-color: $viewport-background-color;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -17,7 +18,6 @@ body {
   overflow-x: hidden;
   padding: 0;
   position: relative;
-  scroll-behavior: smooth;
   @include size($fill);
 }
 
@@ -26,4 +26,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+}
+
+// Selection colors (easy to forget)
+::selection{
+  background: $selection-color;
+  color: $white;
 }
