@@ -10,6 +10,18 @@
   box-sizing: border-box;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
 // --------------------------------------------------------------------
 // * In Internet Explorer 8-10, SVG images with .img-responsive are disproportionately sized.
 // * To fix this, add "width: 100% \9;" where necessary.
@@ -20,4 +32,20 @@
   height: auto;
   max-width: 100%;
   width: 100% \9;
+}
+
+//font mixins
+
+@mixin fontBuilder($family, $size, $lineHeight: normal, $letterSpacing: initial, $style: normal) {
+  font-family: $family, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+  font-style: $style;
+}
+
+// Position Assistance
+@mixin borderHelper($color: #f00) {
+    background-color: #FFB6C1;
+    border: 1px dashed $color;
 }
