@@ -1,2 +1,5 @@
-# tillmanconnection
-Personal online process to staying in touch
+# [Tillman Connection](https://luminoushilt.github.io/tillmanconnection/)
+
+## Prototype
+
+This is a prototype of a WordPress Custom Theme to a personal online process to staying in touch.

@@ -3,10 +3,10 @@ var plan = require('flightplan');
 var userName    = 'luminpb5';
 var serverName  = 'luminoushilt.com';
 var buildPath 	= '';
-var gitPath		= 'dist'
+var gitPath		= 'public'
 var webRoot 	= {
 	staging: '',
-	production: '~/public_html/katc-corp.com'
+	production: '~/public_html/tillmanconnection.website/'
 };
 
 // configuration
@@ -36,7 +36,7 @@ plan.target('production', [
 plan.local(function(local) {
 	// uncomment these if you need to run a build on your machine first
 	local.log('Preparing files for deployment...');
-	local.exec('yarn build', {silent: true});
+	local.exec('gulp build', {silent: true});
 
 	local.log('Deploying files to webserver...');
 	var filesToCopy = local.exec('cd ' + gitPath + ' && git ls-files', {silent: true});
