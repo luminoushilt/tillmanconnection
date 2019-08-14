@@ -1,4 +1,4 @@
-# [tillmanconnection](https://luminoushilt.github.io/tillmanconnection/)
+# [Tillman Connection](https://luminoushilt.github.io/tillmanconnection/)
 
 ## Prototype
 
