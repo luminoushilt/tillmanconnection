@@ -1,7 +1,3 @@
-/* ========================
-		Home / Layout
-	======================= */
-
 .section
 	font-size: 2rem
 	font-weight: 300
@@ -21,6 +17,9 @@
 	&-content
 		margin: 0 auto
 		padding: 3em 1em
+
+		a
+			color: darken($tillman, 5%)
 
 .home
 
@@ -76,6 +75,17 @@
 		padding: 0 1em
 		width: 100%
 
+	.tillman-connection-logo-section
+		color: $tillman
+		display: flex
+		flex-direction: column
+		margin-top: 50px
+		text-align: center
+
+		.tillman-connection
+			font-size: 12rem
+			margin: -2px 0 30px
+
 @media screen and (min-width: $desktop)
 
 	.home
@@ -96,11 +106,22 @@
 			p
 				grid-row: 2/3
 
-			img
+			.tillman-connection-logo-section
 				grid-column: 3/4
 				grid-row: 1/3
 				margin-left: .5em
+				margin-top: 0
 
 		.section-break-image
 			font-size: 3.5rem
 			padding: 0 13% 0 17%
+
+@media screen and (max-width: 460px)
+
+	.tillman-connection-logo-section
+
+		h2
+			font-size: .9em
+
+		.tillman-connection
+			font-size: 7rem
