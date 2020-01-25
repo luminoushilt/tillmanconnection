@@ -118,7 +118,8 @@
 		justify-content: space-around
 		text-align: left
 		display: grid
-		grid-template-columns: 1fr minmax(400px, 2fr) minmax(550px, 3fr) 1fr
+		grid-template-columns: 1fr minmax(390px, 2fr) minmax(650px, 4fr) 1fr
+		padding: initial 2rem
 
 		.brand-logo
 			display: flex
@@ -126,20 +127,21 @@
 			grid-column: 2/3
 
 			.tillman-connection
-				font-size: 2rem
+				font-size: 1.46rem
 				padding-right: 0
+				padding-top: 6px
 
 			.navbar-company-name
 				display: inline-block
 				margin-left: 20px
-				font-size: 1.6rem
+				font-size: 1.46rem
 
 		.navbar, .navbar-menu
 			all: unset
 
 		.navbar
 			display: flex
-			grid-column: 3/4
+			grid-column: 3/5
 			justify-content: flex-end
 			margin: 1rem
 			transform: scale(1, 1)
@@ -155,6 +157,7 @@
 				width: auto
 
 				.navbar-item
+					font-size: .93rem
 					margin: 0 0 0 3em
 					opacity: 1
 					position: relative
@@ -174,3 +177,20 @@
 					&:hover::before,
 					&:focus::before
 						transform: scale(1,1)
+@media screen and (min-width: $lg-screen)
+	.navbar-brand
+		grid-template-columns: 1fr minmax(390px, 2fr) minmax(880px, 4fr) 1fr
+
+		.brand-logo
+
+			.tillman-connection
+				font-size: 2rem
+
+		.navbar
+			grid-column: 3/4
+			margin: 1rem
+
+			.navbar-menu
+
+				.navbar-item
+					font-size: 1.2rem

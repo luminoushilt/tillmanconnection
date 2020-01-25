@@ -13,51 +13,49 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$jet-black: 		#000;
-$dark-gray: 		#333;
-$light-blue: 		#33c3f0 !default;
-$light-gray: 		#ddd;
-$medium-gray: 		#999;
-$medium-dark-gray: 	#3b3b39;
-$lh-orange:			#f6921e;
-$pink: 				#f6c;
-$royal-purple:  	#4e3862;
-$red: 				#d61212;
-$white: 			#fff;
+$jet-black: #000;
+$dark-gray: #333;
+$light-blue: #33c3f0 !default;
+$light-gray: #ddd;
+$medium-gray: #999;
+$medium-dark-gray: #3b3b39;
+$lh-orange: #f6921e;
+$pink: #f6c;
+$royal-purple: #4e3862;
+$red: #d61212;
+$white: #fff;
 
 // Cool
-$aqua:  			#7FDBFF;
-$blue:  			#0074D9;
-$navy:  			#001F3F;
-$green: 			#2ECC40;
-$olive: 			#3D9970;
-$lime:  			#01FF70;
-$teal-one: 			#39CCCC;
-$teal-two:			#028482;
-$teal-three:		rgba(0, 214, 170, .85);
-$tillman:			$teal-two;
-
+$aqua: #7fdbff;
+$blue: #0074d9;
+$navy: #001f3f;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime: #01ff70;
+$teal-one: #39cccc;
+$teal-two: #028482;
+$teal-three: rgba(0, 214, 170, 0.85);
+$tillman: $teal-two;
 
 // Warm
-$yellow:  			#FFDC00;
-$orange:  			#FF851B;
-$tomato-red:		#FF4136;
-$fuchsia: 			#F012BE;
-$purple:  			#B10DC9;
-$maroon:  			#85144B;
-
+$yellow: #ffdc00;
+$orange: #ff851b;
+$tomato-red: #ff4136;
+$fuchsia: #f012be;
+$purple: #b10dc9;
+$maroon: #85144b;
 
 // Gray Scale
-$silver: 			#ddd;
-$gray:   			#aaa;
-$black:  			#111;
+$silver: #ddd;
+$gray: #aaa;
+$black: #111;
 
-$text-color: 		#6a6a6a;
-$primary-color:   $light-blue;
+$text-color: #6a6a6a;
+$primary-color: $light-blue;
 
 // Font Colors
 $base-font-color: $text-color;
-$action-color: 	  $teal-one;
+$action-color: $teal-one;
 $selection-color: $action-color;
 
 // Border
@@ -82,6 +80,7 @@ $navbar-delay: $navbar-duration;
 
 // Breakpoints
 $desktop: 960px;
+$lg-screen: 1240px;
 
 // Misc
 $global-radius: 4px !default;
