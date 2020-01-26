@@ -156,7 +156,7 @@ button, [type='button'], [type='reset'], [type='submit'] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #39CCCC;
+  background-color: #39cccc;
   border: 0;
   border-radius: 3px;
   color: #000;
@@ -197,7 +197,7 @@ button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submi
 }
 
 button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
-  background-color: #39CCCC;
+  background-color: #39cccc;
 }
 
 fieldset {
@@ -251,7 +251,7 @@ textarea {
 }
 
 [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
-  border-color: #39CCCC;
+  border-color: #39cccc;
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(57, 204, 204, 0.7);
           box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(57, 204, 204, 0.7);
   outline: none;
@@ -348,12 +348,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #39CCCC;
+  background: #39cccc;
   color: #fff;
 }
 
 ::selection {
-  background: #39CCCC;
+  background: #39cccc;
   color: #fff;
 }
 
@@ -1753,7 +1753,7 @@ p {
 }
 
 a {
-  color: #39CCCC;
+  color: #39cccc;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip: ink;
   -webkit-transition: color 150ms ease;
@@ -2010,7 +2010,8 @@ hr {
             justify-content: space-around;
     text-align: left;
     display: grid;
-    grid-template-columns: 1fr minmax(400px, 2fr) minmax(550px, 3fr) 1fr;
+    grid-template-columns: 1fr minmax(390px, 2fr) minmax(650px, 4fr) 1fr;
+    padding: initial 2rem;
   }
   .navbar-brand .brand-logo {
     display: -webkit-box;
@@ -2025,13 +2026,14 @@ hr {
     grid-column: 2/3;
   }
   .navbar-brand .brand-logo .tillman-connection {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding-right: 0;
+    padding-top: 6px;
   }
   .navbar-brand .brand-logo .navbar-company-name {
     display: inline-block;
     margin-left: 20px;
-    font-size: 1.6rem;
+    font-size: 1.46rem;
   }
   .navbar-brand .navbar, .navbar-brand .navbar-menu {
     all: unset;
@@ -2041,7 +2043,7 @@ hr {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    grid-column: 3/4;
+    grid-column: 3/5;
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
@@ -2071,6 +2073,7 @@ hr {
     width: auto;
   }
   .navbar-brand .navbar .navbar-menu .navbar-item {
+    font-size: .93rem;
     margin: 0 0 0 3em;
     opacity: 1;
     position: relative;
@@ -2097,6 +2100,23 @@ hr {
     -webkit-transform: scale(1, 1);
         -ms-transform: scale(1, 1);
             transform: scale(1, 1);
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .navbar-brand {
+    grid-template-columns: 1fr minmax(390px, 2fr) minmax(880px, 4fr) 1fr;
+  }
+  .navbar-brand .brand-logo .tillman-connection {
+    font-size: 2rem;
+    padding-top: 3px;
+  }
+  .navbar-brand .navbar {
+    grid-column: 3/4;
+    margin: 1rem;
+  }
+  .navbar-brand .navbar .navbar-menu .navbar-item {
+    font-size: 1.2rem;
   }
 }
 
@@ -2167,6 +2187,10 @@ hr {
   color: #026b69;
 }
 
+.highlight {
+  color: #028482;
+}
+
 .home .no-margin {
   margin: 0 !important;
 }
@@ -2217,6 +2241,10 @@ hr {
           flex-direction: column;
   max-width: 100vw;
   width: 100%;
+}
+
+.home .section-content h1, .home .section-content h2, .home .section-content p {
+  margin: initial auto;
 }
 
 .home .section-content img {
@@ -2559,6 +2587,75 @@ hr {
   .about .portrait-container .position-three {
     grid-column: 4/5;
   }
+}
+
+.fund .section {
+  margin: 2rem 0 0;
+}
+
+.fund .section-hero {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-attachment: fixed;
+  background-image: url(../img/tillman_connection_banner_one.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 75vh;
+  margin: 3.5rem 0 0;
+  max-width: 100vw;
+  padding: 0;
+  width: 100%;
+}
+
+.fund .section-content {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.fund .section-content .fundraise-hero {
+  height: 530px;
+  margin: 0 0 .8rem;
+  overflow: hidden;
+  width: 945px;
+}
+
+.fund .section-content-event {
+  padding: 2rem;
+  text-align: left;
+  width: 950px;
+}
+
+.fund .section .section-content-link {
+  color: #fff;
 }
 
 /* ========================
