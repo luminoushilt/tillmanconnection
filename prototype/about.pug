@@ -9,8 +9,8 @@ html(lang='en')
 		meta(name='description', content='')
 		title Tillman Connection | About
 		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/', crossorigin='anonymous')
-		link(rel='stylesheet', href='assets/css/main.css')
-		link(rel='icon', type='image/png', href='assets/img/favicon.ico')
+		link(rel='stylesheet', href='/assets/css/main.css')
+		link(rel='icon', type='image/png', href='/assets/img/favicon.ico')
 	body.about
 		include assets/inc/banner.pug
 
@@ -18,101 +18,9 @@ html(lang='en')
 			.section-hero
 				h1.title.vert-center About Us
 
-		section.section.section-content
-			h2.title.align-text-center THE TILLMAN LINAGE
-			h6.section-subtitle.align-text-center Linking Generations One Reunion at a Time
-			.portrait-container
-				.portrait-group
-					img(src='assets/img/IMG_0895.jpg' alt='Linage Pictures')
-				.portrait-single.position-one
-					img(src='assets/img/IMG_0896.jpg' alt='Linage Pictures')
-				.portrait-single.position-two
-					img(src='assets/img/IMG_0899.jpg' alt='Linage Pictures')
-				.portrait-single.position-three
-					img(src='assets/img/IMG_0897.jpg' alt='Linage Pictures')
-
-		section.section.section-content
-			p We are in search of descendants of Russell (b 1823)and Alex (b 1830) Tillman. Both were freed slaves owned by the Samuel Herring family. They were known as the Herring brothers as freed men changed their name to Tillman. Russell had 15 children and Alex 5 children. The descendants of which we are in search of. 
-			p With our Mississippi roots many migrated to the north and beyond. An entire generation of mine (picture1)was a part of that great migration. Myself (Sullivan Montgomery) I live in Seattle Washington and born in St. Louis Missouri. 
-			p My mom Leomia Jenkins Montgomery Tillman (picture 2)was born in St Louis (b. June 13,1924)and her dad Charles Tillman Jr. (picture 3)was born in Mississippi then migrated to St Louis Missouri. His father Charles Tillman who’s father was Doc Tillman also born in Mississippi and his father was Alex Tillman. All of which I have many cousins you may be a part of or know. This is the linage I am in search of, can you help
-
-
-		section.section.pad-t-100
-			h2.title.center-title Meet The Committee
-			.card-wrapper
-				.card-box
-					.card-info
-						p Name: Quiana Montgomery
-						p Role: Chair
-						p City: Seattle, WA
-					
-					.card-img
-						img.img-responsive(src='assets/img/quiana.jpeg' alt='Quiana Montgomery')
-
-				.card-box
-					.card-info
-						p Name: Sullivan Montgomery
-						p Role: Treasurer
-						p City: Seattle, WA
-					
-					.card-img
-						img.img-responsive(src='assets/img/sullivan.jpg' alt='Sullivan Montgomery')
-
-				.card-box
-					.card-info
-						p Name: Michael Tillman
-						p City: Seattle, WA
-					
-					.card-img
-						img.img-responsive(src='assets/img/michael.jpg' alt='Michal Tillman')
-
-				.card-box
-					.card-info
-						p Name: Kimble McNeal
-						p State: Florida
-					
-					.card-img
-						img.img-responsive(src='assets/img/kimble.jpg' alt='Kimble McNeal')
-
-				.card-box
-					.card-info
-						p Name: Savina Moore
-						p City: Seattle, WA
-					
-					.card-img
-						img.img-responsive(src='assets/img/savina.jpg' alt='Savina Moore')
-
-				.card-box
-					.card-info
-						p Name: Merlean Locke
-						p Role: Treasurer
-						p City: Seattle, WA
-					
-					.card-img
-						img.img-responsive(src='assets/img/merlean.jpg' alt='Merlean Locke')
-				.card-box
-					.card-info
-						p Name: Martha Stephens
-						p City: Seattle, WA
-					
-					.card-img
-						img.img-responsive(src='assets/img/martha.jpg' alt='Martha Stephens')
-				.card-box
-					.card-info
-						p Name: Sharee Daniels
-						p City: Seattle, WA
-					
-					.card-img
-						img.img-responsive(src='assets/img/sharee.jpg' alt='Sharee Daniels')
-
-				.card-box
-					.card-info
-						p Name:
-						p Role:
-						p City:
-					
-					.card-img
-						i.fas.fa-user
+		section.section
+			.save-the-date-container
+				img.img-responsive(src='/assets/img/save-the-date.jpg', alt='Save the Dates')
 
 		section.section.section-content
 			p For any questions, concerns or suggestions feel free to <a class="section-content-link" href="mailto:info@tillmanconnection.com"> contact one of your committee members</a>.
@@ -120,4 +28,4 @@ html(lang='en')
 		include assets/inc/footer.pug
 		include assets/inc/backtotop.pug
 
-		script(src='assets/js/scripts.js')
+		script(src='/assets/js/scripts.js')
