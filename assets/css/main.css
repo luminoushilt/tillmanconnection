@@ -2988,6 +2988,7 @@ hr {
 }
 
 .about.committee .section-hero .title {
+  padding: 1rem;
   text-shadow: 10px 5px 10px #111;
 }
 
