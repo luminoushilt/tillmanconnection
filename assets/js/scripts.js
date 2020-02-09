@@ -1,20 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
+  const backToTopButton = document.querySelector(".back-to-top");
+  const scrollLinks = document.querySelectorAll(".scroll-link");
+  const dropDown = document.querySelector(".navbar-item:nth-child(2)");
+  const subMenu = document.querySelector(".navbar-sub-menu");
 
-  const backToTopButton = document.querySelector('.back-to-top');
-  const scrollLinks = document.querySelectorAll('.scroll-link');
-
-  window.addEventListener('scroll', scrollFunction);
+  window.addEventListener("scroll", scrollFunction);
 
   function scrollFunction() {
-    if(window.pageYOffset > 300) { // Show backToTopButton
-     backToTopButton.style.display = 'block';
-    }
-    else { // Hide backToTopButton
-     backToTopButton.style.display = 'none';
+    if (window.pageYOffset > 300) {
+      // Show backToTopButton
+      backToTopButton.style.display = "block";
+    } else {
+      // Hide backToTopButton
+      backToTopButton.style.display = "none";
     }
   }
 
-  backToTopButton.addEventListener('click', smoothScrollBackToTop);
+  backToTopButton.addEventListener("click", smoothScrollBackToTop);
 
   function smoothScrollBackToTop() {
     const targetPosition = 0;
@@ -28,22 +30,21 @@ document.addEventListener('DOMContentLoaded', function() {
     function step(timestamp) {
       if (!start) start = timestamp;
       const progress = timestamp - start;
-      window.scrollTo(0, distance*(progress/duration) + startPosition);
+      window.scrollTo(0, distance * (progress / duration) + startPosition);
       if (progress < duration) {
         window.requestAnimationFrame(step);
       }
     }
-
   }
 
-  for(let i=0; i<scrollLinks.length; i++) {
-    scrollLinks[i].addEventListener('click', smoothScroll);
+  for (let i = 0; i < scrollLinks.length; i++) {
+    scrollLinks[i].addEventListener("click", smoothScroll);
   }
 
   // smooth scrolling
   function smoothScroll(event) {
     event.preventDefault();
-    const targetId = event.currentTarget.getAttribute('href');
+    const targetId = event.currentTarget.getAttribute("href");
     const targetPosition = document.querySelector(targetId).offsetTop;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
@@ -55,12 +56,22 @@ document.addEventListener('DOMContentLoaded', function() {
     function step(timestamp) {
       if (!start) start = timestamp;
       const progress = timestamp - start;
-      window.scrollTo(0, distance*(progress/duration) + startPosition);
+      window.scrollTo(0, distance * (progress / duration) + startPosition);
       if (progress < duration) {
         window.requestAnimationFrame(step);
       }
     }
-
   }
 
- });
+  dropDown.addEventListener("mouseover", dropDownMenu);
+  subMenu.addEventListener("mouseover", dropDownMenu);
+  subMenu.addEventListener("mouseout", moveUpMenu);
+
+  function dropDownMenu() {
+    subMenu.style.display = "flex";
+  }
+
+  function moveUpMenu() {
+    subMenu.style.display = "none";
+  }
+});
