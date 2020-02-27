@@ -2180,6 +2180,21 @@ hr {
   color: #333;
 }
 
+.navbar-sub-menu {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  transition: display 400ms ease-in-out;
+}
+
+.navbar-sub-menu .navbar-item {
+  font-size: 1rem;
+}
+
+.open {
+  display: flex;
+}
+
 .navbar-toggle {
   display: none;
 }
